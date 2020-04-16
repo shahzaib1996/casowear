@@ -37,7 +37,7 @@ $wrap_classes = implode( ' ', $wrap_classes ); ?>
 
 	<?php do_action( 'ocean_before_footer_bottom_inner' ); ?>
 
-	<div id="footer-bottom-inner" class="container clr">
+	<div id="footer-bottom-inner" class="container clr" style="display: flex;flex-direction: row;align-items: center;">
 
 		<?php
 		// Display footer bottom menu if location is defined
@@ -59,10 +59,16 @@ $wrap_classes = implode( ' ', $wrap_classes ); ?>
 		<?php
 		// Display copyright info
 		if ( $copy ) : ?>
+		
+			<div id="copyright" class="clr" role="contentinfo" style="text-align: left;">
+				<div id="media_image-2" class="footer-widget widget_media_image clr"><img width="200" height="120" src="http://localhost/caso/wp-content/uploads/2020/04/logo_transparent_r-300x120.png" class="image wp-image-52  attachment-medium size-medium wp-post-image" alt="" style="max-width: 100%; height: auto;" srcset="http://localhost/caso/wp-content/uploads/2020/04/logo_transparent_r-300x120.png 300w, http://localhost/caso/wp-content/uploads/2020/04/logo_transparent_r-768x307.png 768w, http://localhost/caso/wp-content/uploads/2020/04/logo_transparent_r-600x240.png 600w, http://localhost/caso/wp-content/uploads/2020/04/logo_transparent_r.png 1000w" sizes="(max-width: 300px) 100vw, 300px">
+				</div>		
+			</div>
 
-			<div id="copyright" class="clr" role="contentinfo">
+			<div id="copyright" class="clr" role="contentinfo" style="text-align: right;">
 				<?php echo wp_kses_post( do_shortcode( $copy ) ); ?>
 			</div><!-- #copyright -->
+					
 
 		<?php endif; ?>
 

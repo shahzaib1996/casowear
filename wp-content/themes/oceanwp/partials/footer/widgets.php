@@ -56,6 +56,12 @@ $inner_classes = implode( ' ', $inner_classes ); ?>
 
 <?php do_action( 'ocean_before_footer_widgets' ); ?>
 
+<style>
+	.widget-oceanwp-social {
+		float: right !important;
+	}
+</style>
+
 <div id="footer-widgets" class="<?php echo esc_attr( $wrap_classes ); ?>">
 
 	<?php do_action( 'ocean_before_footer_widgets_inner' ); ?>
