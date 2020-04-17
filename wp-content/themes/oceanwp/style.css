@@ -23,3 +23,17 @@
  *
  * CSS file is in "assets/css"
  */
+.product-inner .woo-entry-inner li.category{
+	display:none !important;
+}
+
+.product-inner .woo-entry-inner li.title a {
+	font-size:16px !important;
+}
+
+.product-inner .woo-entry-inner li.btn-wrap,
+.product-inner .woo-entry-inner li.inner,
+.product-inner .woo-entry-inner li.title {
+	margin-top:0px !important;
+	margin-bottom:10px !important;
+}
